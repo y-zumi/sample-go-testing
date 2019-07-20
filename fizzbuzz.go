@@ -3,14 +3,17 @@ package tdd
 import "strconv"
 
 func Stringify(num int) string {
+	var result string
+
 	if num%3 == 0 {
-		return "fizz"
+		result += "fizz"
 	}
-
 	if num%5 == 0 {
-		return "buzz"
+		result += "buzz"
+	}
+	if result == "" {
+		result = strconv.Itoa(num)
 	}
 
-	str := strconv.Itoa(num)
-	return str
+	return result
 }

@@ -51,4 +51,18 @@ func Test_Stringify(t *testing.T) {
 		}
 	})
 
+	t.Run("Multiple of 15", func(t *testing.T) {
+		cases := []TestCase{
+			{"number is 15", 15, "fizzbuzz"},
+			{"number is 105", 105, "fizzbuzz"},
+		}
+		for _, c := range cases {
+			t.Run(c.description, func(t *testing.T) {
+				if actual, expect := Stringify(c.input), c.output; actual != expect {
+					t.Errorf("actual=%s, expect=%s", actual, expect)
+				}
+			})
+		}
+	})
+
 }
