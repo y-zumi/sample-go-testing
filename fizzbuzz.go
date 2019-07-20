@@ -1,5 +1,8 @@
 package tdd
 
-func Stringify() string {
-	return "a"
+import "strconv"
+
+func Stringify(num int) string {
+	str := strconv.Itoa(num)
+	return str
 }
