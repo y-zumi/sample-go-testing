@@ -7,6 +7,10 @@ func Stringify(num int) string {
 		return "fizz"
 	}
 
+	if num%5 == 0 {
+		return "buzz"
+	}
+
 	str := strconv.Itoa(num)
 	return str
 }
