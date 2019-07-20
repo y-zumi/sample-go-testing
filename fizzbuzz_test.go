@@ -18,4 +18,10 @@ func Test_Stringify(t *testing.T) {
 			t.Errorf("actual=%s, expect=%s", actual, expect)
 		}
 	})
+
+	t.Run("when number is 3", func(t *testing.T) {
+		if actual, expect := Stringify(3), "fizz"; actual != expect {
+			t.Errorf("actual=%s, expect=%s", actual, expect)
+		}
+	})
 }
