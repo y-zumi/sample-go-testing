@@ -25,8 +25,8 @@ func Test_Stringify(t *testing.T) {
 
 	t.Run("Multiple of 3", func(t *testing.T) {
 		cases := []TestCase{
-			{"number is 3", 3, "fizz"},
-			{"number is 99", 99, "fizz"},
+			{"number is 3", 3, "Fizz"},
+			{"number is 99", 99, "Fizz"},
 		}
 		for _, c := range cases {
 			t.Run(c.description, func(t *testing.T) {
@@ -39,8 +39,8 @@ func Test_Stringify(t *testing.T) {
 
 	t.Run("Multiple of 5", func(t *testing.T) {
 		cases := []TestCase{
-			{"number is 5", 5, "buzz"},
-			{"number is 100", 100, "buzz"},
+			{"number is 5", 5, "Buzz"},
+			{"number is 100", 100, "Buzz"},
 		}
 		for _, c := range cases {
 			t.Run(c.description, func(t *testing.T) {
@@ -53,8 +53,8 @@ func Test_Stringify(t *testing.T) {
 
 	t.Run("Multiple of 15", func(t *testing.T) {
 		cases := []TestCase{
-			{"number is 15", 15, "fizzbuzz"},
-			{"number is 105", 105, "fizzbuzz"},
+			{"number is 15", 15, "FizzBuzz"},
+			{"number is 105", 105, "FizzBuzz"},
 		}
 		for _, c := range cases {
 			t.Run(c.description, func(t *testing.T) {
