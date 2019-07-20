@@ -1,6 +1,8 @@
-package tdd
+package main
 
-import "strconv"
+import (
+	"strconv"
+)
 
 func Stringify(num int) string {
 	var result string
